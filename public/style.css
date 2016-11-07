@@ -1,0 +1,204 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	padding: 80px 0 140px;
+	background-color: rgb(136, 189, 231);
+	background-image: url('cinqueterre.jpg'), url('cloudtop.jpg');
+	background-position: bottom left, top left;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+}
+
+.bgcredit {
+	position: absolute;
+	bottom: 0;
+	color: rgba(255,255,255,0.5);
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	padding: 0 4px;
+	display: block;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+	color: rgb(37, 50, 75);
+}
+
+a {
+	color: rgb(53, 72, 107);
+}
+a:hover, a:focus, a:visited {
+	color: rgba(53, 72, 107, 0.75);
+}
+
+a svg {
+    margin-bottom: -4px;
+    margin-top: 4px;
+		opacity: 0.75;
+}
+a:hover svg {
+		opacity: 0.95;
+}
+
+.header-logo {
+	text-transform: uppercase;
+}
+
+.header-logo span {
+	color: rgba(53, 72, 107, 0.75);
+	font-size: 0.8em;
+}
+
+header {
+	margin-bottom: 2em;
+}
+
+hr {
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer {
+	margin-top: 2em;
+	padding: 2em 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+	font-size: 0.8em;
+}
+
+p {
+	text-align: justify;
+}
+
+.btn-wrap {
+	white-space: normal;
+}
+
+.lead {
+	padding: 20px 0;
+	margin-bottom: 0;
+	color: rgba(37,50,75,0.8);
+}
+
+.img-avatar {
+	width: 120px;
+	margin-right: 0;
+	border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.readmore-toggle {
+	display: none;
+}
+
+.container {
+	position: relative;
+}
+
+.img-logo {
+	max-width: 120px;
+	position: absolute;
+	right: 0;
+	top: -80px;
+}
+
+.img-logo-bottom {
+	max-width: 48px;
+}
+
+/* Extra-small devices (phones, up to 468px) */
+@media (max-width: 468px) {
+
+	.header-logo {
+		font-size: 30px;
+	}
+	.img-avatar {
+		width: 180px;
+		margin: 0 auto 10px;
+	}
+	.media-md .media-body {
+		text-align: center;
+		width: 100%;
+	}
+	.img-logo {
+		position: static;
+		margin: 0 auto;
+		display: block;
+		max-width: 100px;
+	}
+	.media-md .media-body .list-unstyled {
+		text-align: left;
+		max-width: 215px;
+		margin: 0 auto;
+	}
+	.media-md .media-body, .media-md .media-left, .media-md .media-right {
+		display: block !important;
+	}
+	body {
+		padding: 40px 0 80px;
+	}
+	.readmore {
+		max-height: 200px;
+		overflow: hidden;
+		position: relative;
+		-moz-transition: 1s;
+		-ms-transition: 1s;
+		-o-transition: 1s;
+		-webkit-transition: 1s;
+		transition: 1s;
+		padding-bottom: 30px;
+	}
+	.readmore-toggle {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+		background: #88bde7;
+		background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(136,189,231,1) 45%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(136,189,231,1) 45%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(136,189,231,1) 45%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#88bde7',GradientType=0 ); /* IE6-9 */
+
+		padding-top: 20px;
+		padding-bottom: 2px;
+	}
+	.readmore-toggle span {
+		padding-top:20px;
+	}
+	.readmore.show {
+		max-height: 1000px;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+	body {
+		background-image: url('cinqueterre-sm.jpg'), url('cloudtop-sm.jpg');
+	}
+	.img-logo {
+		max-width: 80px;
+	}
+}
+
+@media (min-width: 768px) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.img-avatar {
+		margin-right: 10px;
+	}
+	body {
+		padding-bottom: 300px;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.img-avatar {
+		width: 160px;
+		margin-right: 20px;
+	}
+	.header-logo {
+		font-size: 46px;
+	}
+}
+
