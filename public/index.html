@@ -55,8 +55,8 @@
 	<meta name="twitter:description" content="Burton-Senior Consulting is a London-based partnership of Kit Senior, a business analyst and solution designer, and Beau Burton, a human resources and learning and development professional.">
 	<meta name="twitter:image" content="http://burtonsenior.com/logo-800px.png">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="style.min.css">
 
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -147,7 +147,7 @@
 			</div>
 			<hr>
 			<p class="lead text-center">
-				<a class="btn btn-primary btn-lg btn-wrap" href="&#109;&#97;&#x69;&#108;t&#111;&#x3a;&#x6d;&#97;i&#108;&#x40;&#x62;&#x75;rt&#111;&#x6e;s&#x65;n&#x69;&#111;&#x72;&#x2e;com" data-analytics-event="Call to Action" data-analytics-label="Enquire">Enquire about our availability to assist with your software project now.</a>
+				<a class="btn" href="&#109;&#97;&#x69;&#108;t&#111;&#x3a;&#x6d;&#97;i&#108;&#x40;&#x62;&#x75;rt&#111;&#x6e;s&#x65;n&#x69;&#111;&#x72;&#x2e;com" data-analytics-event="Call to Action" data-analytics-label="Enquire">Enquire about our availability to assist with your software project now.</a>
 			</p>
 		</main>
 		<footer>
@@ -156,7 +156,7 @@
 					<img class="media-object img-logo-bottom pull-left" src="android-chrome-96x96.png" alt="Logo">
 				</div>
 				<div class="media-body media-middle">
-					<strong>Burton-Senior Consulting</strong> &copy; 2016<br>
+					<strong>Burton-Senior Consulting</strong> &copy; 2017<br>
 					<small>Burton-Senior Consulting Limited is a private limited company registered in England and Wales. Company Number 10035589.</small>
 				</div>
 			</div>
@@ -177,23 +177,31 @@
 [
     {
         "@context": "http://schema.org",
-        "@type": "LocalBusiness",
+        "@type": "Organization",
         "name": "Burton-Senior Consulting",
         "legalName": "Burton-Senior Consulting Limited",
         "description": "Burton-Senior Consulting is a London-based partnership of Kit Senior, a business analyst and solution designer, and Beau Burton, a human resources and learning and development professional.",
         "logo": "http://burtonsenior.com/logo-800px.png",
+        "image": "http://burtonsenior.com/logo-800px.png",
         "email": "mail@burtonsenior.com",
         "url": "http://burtonsenior.com",
         "sameAs": [
           "https://www.linkedin.com/company/burton-senior-consulting-limited",
           "https://plus.google.com/+BurtonSeniorConsulting",
-          "https://www.facebook.com/burtonsenior"
+          "https://www.facebook.com/burtonsenior",
+		  "https://beta.companieshouse.gov.uk/company/10035589"
         ],
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "London",
             "addressCountry": "United Kingdom"
         },
+		"identifier": {
+			"@type": "PropertyValue",
+			"propertyID": "http://companieshouse.gov.uk/",
+			"name": "Company Number",
+			"value":  "10035589"
+		},
         "employee": [
             {
                 "@type": "Person",
@@ -225,8 +233,7 @@
     }
 ]
 </script>
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="zepto.min.js"></script>
 	<script>
 		$(function() {
 			$('.readmore-toggle').on('click', function(e) {

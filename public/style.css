@@ -68,8 +68,48 @@ p {
 	text-align: justify;
 }
 
-.btn-wrap {
-	white-space: normal;
+.btn {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    color: #fff !important;
+	text-decoration: none !important;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+.btn:focus, .btn:hover {
+    text-decoration: none;
+}
+.btn:focus, .btn:active, .btn:active:hover, .btn:active:focus {
+    background-color: #204d74;
+    border-color: #122b40;
+}
+.btn:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
 }
 
 .lead {
