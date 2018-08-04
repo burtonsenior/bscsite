@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://burtonsenior.netlify.com/* https://burtonsenior.com/:splat 301!
