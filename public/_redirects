@@ -1,5 +1,7 @@
 # Redirect default Netlify subdomain to primary domain
 https://burtonsenior.netlify.com/* https://burtonsenior.com/:splat 301!
 
-https://burtonsenior.com/donate https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LFUAG9U5RTJ8W&source=url 301!
-https://burtonsenior.com/donate/:vendor/:package https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LFUAG9U5RTJ8W&source=url&item_name=:vendor/:package 301!
+# https://burtonsenior.com/donate https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LFUAG9U5RTJ8W&source=url 301!
+# https://burtonsenior.com/donate/:vendor/:package https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LFUAG9U5RTJ8W&source=url&item_name=:vendor/:package 301!
+
+https://burtonsenior.com/donate/* https://burtonsenior.com/ 301!
